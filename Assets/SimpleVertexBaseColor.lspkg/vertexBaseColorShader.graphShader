@@ -1,0 +1,150 @@
+SchemaVersion: 1
+Nodes:
+  ChildNodes:
+    Node0:
+      DependencyIndex: 0
+      LevelID: 0
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Color:
+          ClassType1: COLOR
+          IOType: 1
+          Variable: [0.0, 0.0, 0.0, 0.0]
+      PositionX: 103
+      PositionY: 145
+      TemplateID: node_effect_global_surface_color
+      Title1: Surface Color
+    Node0lockForPublic: false
+    Node3:
+      CommentSizeX: 0
+      CommentSizeY: 0
+      DependencyIndex: 3
+      LevelID: 6
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        AO:
+          ClassType1: COLOR
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Albedo:
+          ClassType1: COLOR
+          Connection0:
+            NodeLevelID: 0
+            PortID: Color
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Emissive:
+          ClassType1: COLOR
+          Variable: [0.0, 0.0, 0.0, 1.0]
+        Metallic:
+          Variable: 0.0
+        Mode:
+          ItemIndex: 0
+          ItemList: "Diffuse and Specular : Diffuse Only : Specular Only"
+        Normal:
+          ClassType1: COLOR
+          Variable: [0.0, 1.0, 0.0, 1.0]
+        NormalSpace:
+          ItemIndex: 0
+          ItemList: "Tangent : World"
+        Opacity:
+          Variable: 1.0
+        Output:
+          ClassType1: COLOR
+          IOType: 1
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        Roughness:
+          Variable: 0.85
+        SpecularAO:
+          ClassType1: COLOR
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        ToneMapping:
+          Variable: true
+      PositionX: 460
+      PositionY: 145
+      TemplateID: nodes_main_material_brdf
+      Title1: PBR ( Lighting )
+      Title2: Diffuse and Specular
+    Node3lockForPublic: false
+    Node1:
+      CommentSizeX: 0
+      CommentSizeY: 0
+      DependencyIndex: 1
+      LevelID: 4
+      NodeCount: 0
+      NodeType: 1
+      Ports:
+        Depth:
+          Variable: 1.0
+        DepthMode:
+          ItemIndex: 0
+          ItemList: |2-
+            		Non-Linear - Normalized [0 to 1] ) :		Linear - Normalized [-1 to 1] :		View Space - Non-Normalized [-near to -far]	
+        DontFreezeSpec:
+          Variable: false
+        FinalColor:
+          ClassType1: COLOR
+          Connection0:
+            NodeLevelID: 6
+            PortID: Output
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        FinalColor1:
+          ClassType1: COLOR
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        FinalColor2:
+          ClassType1: COLOR
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        FinalColor3:
+          ClassType1: COLOR
+          Variable: [1.0, 1.0, 1.0, 1.0]
+        GSplatPointSize:
+          Variable: 0.0
+        GSplatRotation:
+          Variable: [0.0, 0.0, 0.0, 1.0]
+        GSplatScale:
+          Variable: [0.0, 0.0, 0.0]
+        Motion Vector Pass:
+          ItemIndex: 0
+          ItemList: "Write Velocity and Depth : Discard Velocity but Write Depth : Discard Velocity and Depth"
+        Negative:
+          Variable: false
+        PrevWorldPosition:
+          Variable: [0.0, 0.0, 0.0]
+        RayDirection:
+          Variable: [0.0, 1.0, 0.0]
+        RayOrigin:
+          Variable: [0.0, 0.0, 0.0]
+        ShowPrevPos:
+          Variable: false
+        Targets:
+          ItemIndex: 0
+          ItemList: "1 : 2 : 3 : 4"
+        Type:
+          ItemIndex: 0
+          ItemList: "3D : Post Effect : Hair : Gaussian Splatting"
+        WorldNormal:
+          Variable: [0.0, 1.0, 0.0]
+        WorldPosition:
+          Variable: [0.0, 0.0, 0.0]
+        WorldTangent:
+          Variable: [0.0, 0.0, 1.0]
+        WriteDepth:
+          Variable: false
+      PositionX: 220
+      PositionY: 90
+      TemplateID: nodes_main_graph
+      Title1: Shader
+      Title2: 3D
+    Node1lockForPublic: false
+  IsSubGraph0: true
+  IsSubGraph1: true
+  IsSubGraph2: true
+  IsSubGraph3: true
+  LevelID: 0
+  NodeType: 3
+  PositionX: 0
+  PositionY: 0
+  TemplateID: nodes_main_subgraph
+  Title1: ""
+NodeslockForPublic: false
+SystemID: dev.snap.shaders

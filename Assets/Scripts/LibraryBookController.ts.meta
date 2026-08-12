@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/67420ac5-1ab7-4b84-ac1b-3904a0b8bc91>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c4c66e4f-a3c9-4e3e-afd9-13b410d37dd2
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c4c66e4f-a3c9-4e3e-afd9-13b410d37dd2
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 7b94cbe3-5379-46bc-b594-a4827fdcfddf
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/7b94cbe3-5379-46bc-b594-a4827fdcfddf>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 9716049c-7c5b-4910-90f0-ad62e6857c4d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    colliderSize: false
+    colorId: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - colorId: red
+      colliderSize: !<Vec3> {x: 12.000000, y: 2.500000, z: 17.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">LibraryBookController – grab, carry, shelve one book</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input string colorId = "red" {"hint":"Book color identity used for shelf-matching gameplay logic (\"red\" | \"green\" | \"blue\"). Must match the sibling LibraryBookMesh bookColor."}'
+    - "// @input vec3 colliderSize = {12,2.5,17} {\"hint\":\"Collider/grab box size in centimeters (X,Y,Z). Must match LibraryBookMesh's authored geometry (12 x 2.5 x 17 default).\"}"
+    - '// @ui {"widget":"group_end"}'

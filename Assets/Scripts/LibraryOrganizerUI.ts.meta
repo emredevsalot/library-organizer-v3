@@ -1,0 +1,86 @@
+- !<AssetImportMetadata/e7ad2692-eea9-428a-861d-21b1034fdc1d>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 76eaa4a2-6658-4ccc-bda1-0d3225256da6
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 76eaa4a2-6658-4ccc-bda1-0d3225256da6
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 53c5c0cb-59fd-4799-9bbb-ebe2b8ed3aa6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/53c5c0cb-59fd-4799-9bbb-ebe2b8ed3aa6>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 22e85b1d-185e-4963-baf7-a1019a4426c6
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    accentColor: false
+    completeBody: false
+    completeTitle: false
+    dialogHeight: false
+    dialogWidth: false
+    introBody: false
+    introButtonLabel: false
+    introTitle: false
+    progressLabel: false
+    progressPanelHeight: false
+    progressPanelWidth: false
+    resetButtonLabel: false
+    textColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - accentColor: !<Vec4> {x: 0.850000, y: 0.620000, z: 0.320000, w: 1.000000}
+      textColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 0.850000}
+      progressPanelWidth: !<float> 16.000000
+      progressPanelHeight: !<float> 6.000000
+      dialogWidth: !<float> 26.000000
+      dialogHeight: !<float> 18.000000
+      progressLabel: Books Shelved
+      introTitle: Time to Organize!
+      introBody: "Sort the books by color to warm up your organizing skills. When you're done, bring that same focus to your real space."
+      introButtonLabel: "Let's Go"
+      completeTitle: Library Complete!
+      completeBody: All 15 books shelved correctly!
+      resetButtonLabel: Reset Library
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">LibraryOrganizerUI – progress HUD + completion dialog</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input vec4 accentColor = {0.85,0.62,0.32,1} {"hint":"Warm wood-brown accent color used for the counter number and dialog title.", "widget":"color"}'
+    - '// @input vec4 textColor = {1,1,1,0.85} {"hint":"Body/label text color (progress label, dialog body).", "widget":"color"}'
+    - '// @input float progressPanelWidth = 18 {"hint":"Progress HUD panel width, in centimeters.", "widget":"slider", "min":10, "max":26, "step":0.5}'
+    - '// @input float progressPanelHeight = 10.5 {"hint":"Progress HUD panel height, in centimeters.", "widget":"slider", "min":4, "max":14, "step":0.5}'
+    - '// @input float dialogWidth = 26 {"hint":"Complete dialog width, in centimeters.", "widget":"slider", "min":16, "max":40, "step":0.5}'
+    - '// @input float dialogHeight = 18 {"hint":"Complete dialog height, in centimeters.", "widget":"slider", "min":10, "max":30, "step":0.5}'
+    - '// @input string progressLabel = "Books Shelved" {"hint":"Label shown above the progress counter."}'
+    - '// @input string introTitle = "Time to Organize!" {"hint":"Intro dialog title, shown once at Lens start before the player begins."}'
+    - "// @input string introBody = \"Sort the books by color to warm up your organizing skills. When you're done, bring that same focus to your real space.\" {\"hint\":\"Intro dialog body text — frames the mini-game as a warm-up for the player's real-life organizing.\"}"
+    - "// @input string introButtonLabel = \"Let's Go\" {\"hint\":\"Label on the intro dialog's CTA button that dismisses it and starts play.\"}"
+    - '// @input string completeTitle = "Nice Work!" {"hint":"Dialog title shown when all books are shelved correctly."}'
+    - "// @input string completeBody = \"You just organized 15 books. Now go bring that same energy to your real bookshelf, desk, or closet.\" {\"hint\":\"Dialog body text shown under the title — ties the completed mini-game back to the player's real-life organizing.\"}"
+    - '// @input string resetButtonLabel = "Reset Library" {"hint":"Label on the reset/replay button."}'
+    - '// @ui {"widget":"group_end"}'

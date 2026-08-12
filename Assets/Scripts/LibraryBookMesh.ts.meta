@@ -1,0 +1,58 @@
+- !<AssetImportMetadata/5cac820d-341f-43e1-99f5-6f8f64c6f211>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 21a5ae2d-b431-4da6-8b5e-1e0727bfd2a1
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 21a5ae2d-b431-4da6-8b5e-1e0727bfd2a1
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 631b686a-14b2-48cb-b7c5-6cd794afea3a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/631b686a-14b2-48cb-b7c5-6cd794afea3a>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 2711d320-978d-497a-bc1d-8f7d7247567a
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    bookColor: false
+    material: false
+    pageColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      bookColor: !<Vec3> {x: 0.750000, y: 0.150000, z: 0.150000}
+      pageColor: !<Vec3> {x: 0.940000, y: 0.900000, z: 0.800000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">LibraryBookMesh – procedural book geometry</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input Asset.Material material {"hint":"Shared vertex-color material (SimpleVertexBaseColor.lspkg / vertexBaseColorMaterial). Wired by the scene bootstrap."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input vec3 bookColor = {0.75,0.15,0.15} {"hint":"Cover color for this book instance (RGB, 0-1).", "widget":"color"}'
+    - '// @input vec3 pageColor = {0.94,0.9,0.8} {"hint":"Page-edge stripe color (cream), visible along one long edge of the cover.", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

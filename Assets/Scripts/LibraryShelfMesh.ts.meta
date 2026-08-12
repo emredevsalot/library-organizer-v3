@@ -1,0 +1,58 @@
+- !<AssetImportMetadata/b0c94d8b-9f38-49cd-a9eb-eca0f2f18684>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 5e61a7ce-5151-4c84-b4a9-bc18668989c2
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 5e61a7ce-5151-4c84-b4a9-bc18668989c2
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4055b1ce-9075-4238-98af-4910eae90808
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/4055b1ce-9075-4238-98af-4910eae90808>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 904a721d-637b-477b-948f-5b9dff412224
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    frameColor: false
+    material: false
+    trimColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      frameColor: !<Vec3> {x: 0.550000, y: 0.380000, z: 0.220000}
+      trimColor: !<Vec3> {x: 0.750000, y: 0.150000, z: 0.150000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">LibraryShelfMesh – procedural bookshelf geometry</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input Asset.Material material {"hint":"Shared vertex-color material (SimpleVertexBaseColor.lspkg / vertexBaseColorMaterial). Wired by the scene bootstrap."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input vec3 frameColor = {0.55,0.38,0.22} {"hint":"Wood-brown frame color, shared across all shelves for a consistent look.", "widget":"color"}'
+    - '// @input vec3 trimColor = {0.75,0.15,0.15} {"hint":"Color-coded trim band along the front-top edge — set per shelf instance to match its book color.", "widget":"color"}'
+    - '// @ui {"widget":"group_end"}'

@@ -1,0 +1,59 @@
+- !<AssetImportMetadata/2b3aaffb-8e6b-4240-a5f1-cb08c58a1f49>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 9c15ff13-01b2-42ab-813e-ee2e7cfbd57a
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 9c15ff13-01b2-42ab-813e-ee2e7cfbd57a
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 01b2600c-a849-413b-98b7-a580ecf4c6fa
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/01b2600c-a849-413b-98b7-a580ecf4c6fa>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 61ce76bc-139b-4d7c-b4ce-3c9b87d2bdfe
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    colorId: false
+    dropDetectionRadius: false
+    slotAnchors: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - slotAnchors: !<reference.SceneObject[]>
+        []
+      colorId: red
+      dropDetectionRadius: !<float> 55.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">LibraryShelfController – shelf color + slot occupancy</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject[] slotAnchors = {} {"hint":"The 5 slot anchor SceneObjects (child empties) a correctly-shelved book snaps to, in order."}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - "// @input string colorId = \"red\" {\"hint\":\"This shelf's color identity (\\\"red\\\" | \\\"green\\\" | \\\"blue\\\"). Must match the sibling LibraryShelfMesh trimColor.\"}"
+    - "// @input float dropDetectionRadius = 55 {\"hint\":\"Horizontal (XZ) distance in centimeters within which a released book counts as 'dropped near this shelf'.\", \"widget\":\"slider\", \"min\":20, \"max\":100, \"step\":5}"
+    - '// @ui {"widget":"group_end"}'
